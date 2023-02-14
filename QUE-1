@@ -1,0 +1,39 @@
+#include<stdio.h>
+
+int linear_search(int array[],int size,int key)
+{
+int i;
+int comparison =0;
+for(i=0;i<size;i++)
+{
+comparison++;
+if(array[i]==key)
+{
+return comparisons;
+}
+}
+return -1;
+}
+int main()
+{
+int array[]={3,4,1,7,9,2};
+int size = sizeof(array)/sizeof(array[0]);
+int key = 7;
+int comparisons = linear_search(array,size,key);
+if(comparisons != -1)
+{
+printf("elements found");
+printf("no. of comparisons : %d\n",comparisons);
+}
+else
+{
+printf("element not found in an array\n");
+}
+return 0;
+}
+
+
+
+
+
+
