@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int a[20];
+    int c=0;
+    int key;
+    int i;
+    printf("enter your key\n");
+    scanf("%d",&key);
+    for(i=0;i<10;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<10;i++)
+    {
+        if(key==a[i])
+        {
+            c++;
+        }
+       
+    }
+    printf("the number of time the key is repeating %d",c);
+}
